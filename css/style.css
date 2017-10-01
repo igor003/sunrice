@@ -1,1 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.add {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+textarea {
+  resize: none;
+}

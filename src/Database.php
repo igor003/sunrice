@@ -25,7 +25,8 @@ class Database {
     }
 	
 	public function query_one($query) {
-		return $this->_connection->query($query)->fetch_assoc();
+        //var_dump($query);
+		return  $this->_connection->query($query)->fetch_assoc();
 	}
 
 	public function query_all($query){

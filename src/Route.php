@@ -22,7 +22,7 @@ class Route{
     public function get_controller_and_action(){
         $uri_parts = explode('/', $this->uri);
         if(!$uri_parts[1]){
-            $uri_parts[1] = 'Home';
+            $uri_parts[1] = 'Product';
         }
         if(!$uri_parts[2]){
             $uri_parts[2] = 'index';
