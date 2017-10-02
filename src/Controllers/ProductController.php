@@ -11,22 +11,24 @@ class ProductController{
 
     public function index(){
         $product = new ProductModel;
-        $titles = $product->get_products();
+        $titles = $product->get_all();
         $view = new View(['result'=>$titles]);
         $view->render('Product_list');
     }
     public function add_view(){
         $product = new ProductCategoryModel();
         $categories =  $product->get_categories();
-        //var_dump($categories);
         $view = new View(['categories'=>$categories]);
         $view->render('Product_add_form');
-
     }
-    public function get_details(){
+    public function add(){
+        $product = new ProductModel();
+        $product->add($_POST['title'],$_POST['price'],$_POST['quantity'],$_POST['note'],$_POST['id_category']);
+        header('Location:/product/index');
+    }
+    public function details(){
         $product = new ProductModel;
-        $all_products = $product->get_products_by_id(Route::getInstance()->get_first_param());
-       // var_dump( $all_products);
+        $all_products = $product->get_by_id(Route::getInstance()->get_first_param());
         $view = new View(['products'=>$all_products]);
         $view->render('Product_details');
     }
@@ -34,5 +36,13 @@ class ProductController{
         $product = new ProductModel;
         $product->delete(Route::getInstance()->get_first_param());
         header('Location:'.$_SERVER['HTTP_REFERER']);
+    }
+    public function update_view(){
+        $product = new ProductModel;
+        $details = $product->get_by_id(Route::getInstance()->get_first_param());
+        $product = new ProductCategoryModel();
+        $categories =  $product->get_categories();
+        $view = new View(['details'=> $details, 'categories'=> $categories]);
+        $view->render('Product_update_form');
     }
 }

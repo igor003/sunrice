@@ -27,9 +27,9 @@ include('headers.php');
                 foreach ($result as $product) {
                     ?>
                     <tr>
-                        <td class='text-center' scope="row"><a href="/product/get_details/<?php echo $product['id']?>"><?php echo $product['title'] ?></a></td>
+                        <td class='text-center' scope="row"><a href="/product/details/<?php echo $product['id']?>"><?php echo $product['title'] ?></a></td>
                         <td class='text-center'>
-                            <a href=<?php echo '/product/update/'.$product['id']   ?>><div class="btn btn-success">Update</div></a>
+                            <a href=<?php echo '/product/update_view/'.$product['id']   ?>><div class="btn btn-success">Update</div></a>
                         </td>
                         <td class='text-center'>
                             <a href=<?php echo"/product/delete/".$product['id'] ?>><div class="btn btn-danger">Delete</div></a>
