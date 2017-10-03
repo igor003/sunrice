@@ -16,11 +16,14 @@ class ProductModel{
     public function get_all(){
         return $this->connection->query_all("SELECT id, title FROM `product`");
     }
-    public function get_by_id($id){
+    public function get_by_id_with_category($id){
         return $this->connection->query_one("
-            SELECT *  FROM `product`  INNER JOIN `product_category` 
-            ON product.id_category = product_category.id WHERE product.id = '".$id."'
+            SELECT *  FROM `product` AS p  INNER JOIN `product_category` AS pc 
+            ON p.id_category = pc.id WHERE p.id = '".$id."'
         ");
+    }
+    public function get_by_id($id){
+        return $this->connection->query_one("SELECT * FROM `product` WHERE id = '".$id."'");
     }
     public function delete($id){
         return $this->connection->query("DELETE FROM `product` WHERE id = '".$id."'");

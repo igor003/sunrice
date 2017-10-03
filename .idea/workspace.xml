@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79d7f060-27da-49be-8ca9-077668b7684f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Views/Product_update_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Views/Product_history.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/ProductController.php" afterPath="$PROJECT_DIR$/src/Controllers/ProductController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Models/HistoryModel.php" afterPath="$PROJECT_DIR$/src/Models/HistoryModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Models/ProductModel.php" afterPath="$PROJECT_DIR$/src/Models/ProductModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/Product_add_form.php" afterPath="$PROJECT_DIR$/src/Views/Product_add_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/Product_list.php" afterPath="$PROJECT_DIR$/src/Views/Product_list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/Product_details.php" afterPath="$PROJECT_DIR$/src/Views/Product_details.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/Product_update_form.php" afterPath="$PROJECT_DIR$/src/Views/Product_update_form.php" />
     </list>
     <ignored path="sunrice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +32,8 @@
       <file leaf-file-name="ProductController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controllers/ProductController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+            <state relative-caret-position="210">
+              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
                 <element signature="e#87#111#0#PHP" expanded="true" />
@@ -41,81 +42,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product_update_form.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Views/Product_update_form.php">
+      <file leaf-file-name="Product_history.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views/Product_history.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-              <folding>
-                <marker date="1506971783967" expanded="true" signature="415:611" ph="..." />
-                <marker date="1506971783967" expanded="true" signature="648:859" ph="..." />
-                <marker date="1506971783967" expanded="true" signature="896:1161" ph="..." />
-                <marker date="1506971783967" expanded="true" signature="1053:1161" ph="..." />
-                <marker date="1506971783967" expanded="true" signature="1444:1639" ph="..." />
-                <marker date="1506971783967" expanded="true" signature="1676:1754" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_database_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../prilojuha/edit_database_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="93" column="194" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="194" />
-              <folding>
-                <marker date="1482336738541" expanded="true" signature="56:153" ph="SELECT * FRO... terminal_proprietes" />
-                <marker date="1482336738541" expanded="true" signature="263:293" ph="SELECT * FRO... table_terminal" />
-                <marker date="1482336738541" expanded="true" signature="430:463" ph="SELECT * FRO... table_nr_presetei" />
-                <marker date="1482336738541" expanded="true" signature="582:611" ph="SELECT * FRO... table_nr_mini" />
-                <marker date="1482336738541" expanded="true" signature="727:752" ph="SELECT * FRO... table_sez" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HistoryModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Models/HistoryModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="18" column="19" selection-start-line="5" selection-start-column="7" selection-end-line="18" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductModel.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Models/ProductModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            <state relative-caret-position="516">
+              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
-                <marker date="1506968894797" expanded="true" signature="323:354" ph="SELECT title... product" />
-                <marker date="1506968894797" expanded="true" signature="458:571" ph="SELECT * FRO... product" />
-                <marker date="1506968894797" expanded="true" signature="458:600" ph="SELECT * FRO... product" />
-                <marker date="1506968894797" expanded="true" signature="693:735" ph="DELETE FROM " />
-                <marker date="1506968894797" expanded="true" signature="862:890" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:973" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:983" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1061" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1075" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1145" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1147" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1157" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1234" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1236" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1253" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1321" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1326" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1327" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="862:1345" ph="UPDATE `prod... " />
-                <marker date="1506968894797" expanded="true" signature="1476:1558" ph="INSERT INTO `product`... " />
-                <marker date="1506968894797" expanded="true" signature="1476:1572" ph="INSERT INTO `product`... " />
-                <marker date="1506968894797" expanded="true" signature="1476:1585" ph="INSERT INTO `product`... " />
-                <marker date="1506968894797" expanded="true" signature="1476:1601" ph="INSERT INTO `product`... " />
-                <marker date="1506968894797" expanded="true" signature="1476:1613" ph="INSERT INTO `product`... " />
-                <marker date="1506968894797" expanded="true" signature="1476:1631" ph="INSERT INTO `product`... " />
+                <marker date="1507049333406" expanded="true" signature="323:354" ph="SELECT title... product" />
+                <marker date="1507049333406" expanded="true" signature="472:576" ph="SELECT * FRO... product" />
+                <marker date="1507049333406" expanded="true" signature="472:599" ph="SELECT * FRO... product" />
+                <marker date="1507049333406" expanded="true" signature="699:743" ph="SELECT * FRO... product" />
+                <marker date="1507049333406" expanded="true" signature="827:869" ph="DELETE FROM " />
+                <marker date="1507049333406" expanded="true" signature="996:1461" ph="UPDATE `prod... " />
+                <marker date="1507049333406" expanded="true" signature="1610:1765" ph="INSERT INTO `product`... " />
               </folding>
             </state>
           </provider>
@@ -124,8 +84,8 @@
       <file leaf-file-name="ProductCategoryModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Models/ProductCategoryModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="153">
+              <caret line="14" column="5" selection-start-line="10" selection-start-column="3" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <marker date="1506883719850" expanded="true" signature="337:369" ph="SELECT * FRO... product_category" />
               </folding>
@@ -133,12 +93,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product_add_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Views/Product_add_form.php">
+      <file leaf-file-name="HistoryModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Models/HistoryModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="42" column="6" selection-start-line="5" selection-start-column="0" selection-end-line="42" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="442">
+              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+              <folding>
+                <marker date="1507057873065" expanded="true" signature="386:415" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:498" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:499" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:511" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:525" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:526" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:529" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:542" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:558" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:570" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:571" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:583" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="386:601" ph="INSERT INTO `product_history`... " />
+                <marker date="1507057873065" expanded="true" signature="718:888" ph="SELECT * FRO... product_history" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,11 +128,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Product_add_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views/Product_add_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" column="6" selection-start-line="5" selection-start-column="0" selection-end-line="42" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Product_details.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/Product_details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="340">
+              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -166,8 +151,8 @@
       <file leaf-file-name="Product_list.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/Product_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="40" column="14" selection-start-line="39" selection-start-column="13" selection-end-line="40" selection-end-column="14" />
+            <state relative-caret-position="629">
+              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -190,18 +175,20 @@
         <option value="$PROJECT_DIR$/src/Route.php" />
         <option value="$PROJECT_DIR$/src/Views/head.php" />
         <option value="$PROJECT_DIR$/src/Views/footer.php" />
-        <option value="$PROJECT_DIR$/src/Views/Product_details.php" />
         <option value="$PROJECT_DIR$/src/Views/Home.php" />
         <option value="$PROJECT_DIR$/src/Models/CategoryModel.php" />
         <option value="$PROJECT_DIR$/src/Models/ProductCategoryModel.php" />
         <option value="$PROJECT_DIR$/less/style.less" />
         <option value="$PROJECT_DIR$/src/Views/headers.php" />
-        <option value="$PROJECT_DIR$/src/Database.php" />
         <option value="$PROJECT_DIR$/src/Views/Product_add_form.php" />
-        <option value="$PROJECT_DIR$/src/Models/ProductModel.php" />
-        <option value="$PROJECT_DIR$/src/Controllers/ProductController.php" />
         <option value="$PROJECT_DIR$/src/Views/Product_list.php" />
+        <option value="$PROJECT_DIR$/src/Models/ProductModel.php" />
         <option value="$PROJECT_DIR$/src/Views/Product_update_form.php" />
+        <option value="$PROJECT_DIR$/src/Database.php" />
+        <option value="$PROJECT_DIR$/src/Models/HistoryModel.php" />
+        <option value="$PROJECT_DIR$/src/Controllers/ProductController.php" />
+        <option value="$PROJECT_DIR$/src/Views/Product_history.php" />
+        <option value="$PROJECT_DIR$/src/Views/Product_details.php" />
       </list>
     </option>
   </component>
@@ -334,8 +321,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,7 +330,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../newpril" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../prilojuha" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -407,18 +394,20 @@
       <workItem from="1506707445844" duration="3768000" />
       <workItem from="1506795186408" duration="2755000" />
       <workItem from="1506873957109" duration="8706000" />
-      <workItem from="1506964809978" duration="7028000" />
+      <workItem from="1506964809978" duration="7622000" />
+      <workItem from="1507047011837" duration="11674000" />
+      <workItem from="1507062166214" duration="56000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33844000" />
+    <option name="totallyTimeSpent" value="46168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1762481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -453,19 +442,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Views/headers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -550,31 +530,13 @@
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1506968894797" expanded="true" signature="323:354" ph="SELECT title... product" />
-            <marker date="1506968894797" expanded="true" signature="458:571" ph="SELECT * FRO... product" />
-            <marker date="1506968894797" expanded="true" signature="458:600" ph="SELECT * FRO... product" />
-            <marker date="1506968894797" expanded="true" signature="693:735" ph="DELETE FROM " />
-            <marker date="1506968894797" expanded="true" signature="862:890" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:973" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:983" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1061" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1075" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1145" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1147" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1157" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1234" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1236" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1253" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1321" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1326" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1327" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1345" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1558" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1572" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1585" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1601" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1613" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1631" ph="INSERT INTO `product`... " />
+            <marker date="1507049333406" expanded="true" signature="323:354" ph="SELECT title... product" />
+            <marker date="1507049333406" expanded="true" signature="472:576" ph="SELECT * FRO... product" />
+            <marker date="1507049333406" expanded="true" signature="472:599" ph="SELECT * FRO... product" />
+            <marker date="1507049333406" expanded="true" signature="699:743" ph="SELECT * FRO... product" />
+            <marker date="1507049333406" expanded="true" signature="827:869" ph="DELETE FROM " />
+            <marker date="1507049333406" expanded="true" signature="996:1461" ph="UPDATE `prod... " />
+            <marker date="1507049333406" expanded="true" signature="1610:1765" ph="INSERT INTO `product`... " />
           </folding>
         </state>
       </provider>
@@ -601,7 +563,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1507057873065" expanded="true" signature="386:415" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:498" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:499" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:511" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:525" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:526" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:529" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:542" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:558" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:570" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:571" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:583" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:601" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="718:888" ph="SELECT * FRO... product_history" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -662,31 +639,13 @@
           <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1506968894797" expanded="true" signature="323:354" ph="SELECT title... product" />
-            <marker date="1506968894797" expanded="true" signature="458:571" ph="SELECT * FRO... product" />
-            <marker date="1506968894797" expanded="true" signature="458:600" ph="SELECT * FRO... product" />
-            <marker date="1506968894797" expanded="true" signature="693:735" ph="DELETE FROM " />
-            <marker date="1506968894797" expanded="true" signature="862:890" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:973" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:983" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1061" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1075" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1145" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1147" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1157" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1234" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1236" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1253" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1321" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1326" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1327" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1345" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1558" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1572" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1585" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1601" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1613" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1631" ph="INSERT INTO `product`... " />
+            <marker date="1507049333406" expanded="true" signature="323:354" ph="SELECT title... product" />
+            <marker date="1507049333406" expanded="true" signature="472:576" ph="SELECT * FRO... product" />
+            <marker date="1507049333406" expanded="true" signature="472:599" ph="SELECT * FRO... product" />
+            <marker date="1507049333406" expanded="true" signature="699:743" ph="SELECT * FRO... product" />
+            <marker date="1507049333406" expanded="true" signature="827:869" ph="DELETE FROM " />
+            <marker date="1507049333406" expanded="true" signature="996:1461" ph="UPDATE `prod... " />
+            <marker date="1507049333406" expanded="true" signature="1610:1765" ph="INSERT INTO `product`... " />
           </folding>
         </state>
       </provider>
@@ -799,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,110 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/headers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/Product_add_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="42" column="6" selection-start-line="5" selection-start-column="0" selection-end-line="42" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/Product_details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/Product_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="40" column="14" selection-start-line="39" selection-start-column="13" selection-end-line="40" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <element signature="e#87#111#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/ProductCategoryModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <marker date="1506883719850" expanded="true" signature="337:369" ph="SELECT * FRO... product_category" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/ProductModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1506968894797" expanded="true" signature="323:354" ph="SELECT title... product" />
-            <marker date="1506968894797" expanded="true" signature="458:571" ph="SELECT * FRO... product" />
-            <marker date="1506968894797" expanded="true" signature="458:600" ph="SELECT * FRO... product" />
-            <marker date="1506968894797" expanded="true" signature="693:735" ph="DELETE FROM " />
-            <marker date="1506968894797" expanded="true" signature="862:890" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:973" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:983" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1061" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1075" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1145" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1147" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1157" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1234" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1236" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1253" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1321" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1326" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1327" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="862:1345" ph="UPDATE `prod... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1558" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1572" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1585" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1601" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1613" ph="INSERT INTO `product`... " />
-            <marker date="1506968894797" expanded="true" signature="1476:1631" ph="INSERT INTO `product`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/HistoryModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -939,15 +793,117 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/Product_update_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="612">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/Product_add_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="6" selection-start-line="5" selection-start-column="0" selection-end-line="42" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/Product_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/headers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/Product_history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="19" selection-start-line="5" selection-start-column="7" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/Product_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
           <folding>
-            <marker date="1506971783967" expanded="true" signature="415:611" ph="..." />
-            <marker date="1506971783967" expanded="true" signature="648:859" ph="..." />
-            <marker date="1506971783967" expanded="true" signature="896:1161" ph="..." />
-            <marker date="1506971783967" expanded="true" signature="1053:1161" ph="..." />
-            <marker date="1506971783967" expanded="true" signature="1444:1639" ph="..." />
-            <marker date="1506971783967" expanded="true" signature="1676:1754" ph="..." />
+            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#87#111#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/HistoryModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding>
+            <marker date="1507057873065" expanded="true" signature="386:415" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:498" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:499" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:511" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:525" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:526" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:529" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:542" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:558" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:570" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:571" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:583" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="386:601" ph="INSERT INTO `product_history`... " />
+            <marker date="1507057873065" expanded="true" signature="718:888" ph="SELECT * FRO... product_history" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/ProductCategoryModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="5" selection-start-line="10" selection-start-column="3" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <marker date="1506883719850" expanded="true" signature="337:369" ph="SELECT * FRO... product_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/ProductModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1507049333406" expanded="true" signature="323:354" ph="SELECT title... product" />
+            <marker date="1507049333406" expanded="true" signature="472:576" ph="SELECT * FRO... product" />
+            <marker date="1507049333406" expanded="true" signature="472:599" ph="SELECT * FRO... product" />
+            <marker date="1507049333406" expanded="true" signature="699:743" ph="SELECT * FRO... product" />
+            <marker date="1507049333406" expanded="true" signature="827:869" ph="DELETE FROM " />
+            <marker date="1507049333406" expanded="true" signature="996:1461" ph="UPDATE `prod... " />
+            <marker date="1507049333406" expanded="true" signature="1610:1765" ph="INSERT INTO `product`... " />
           </folding>
         </state>
       </provider>
