@@ -9,12 +9,18 @@ use Models\ProductModel;
 use Models\ProductCategoryModel;
 use Models\HistoryModel;
 class ProductController{
+    private $prise_range_for_similar_products = 50;
 
     public function index(){
         $product = new ProductModel;
-        $titles = $product->get_all();
-        $view = new View(['result'=>$titles]);
-        $view->render('Product_list');
+        $products = $product->get_all();
+        $total_sum = $product->get_total_sum();
+
+        foreach($products as &$product){
+               $product[percents] += round((int)$product['total_price'] /((int)$total_sum[0]['total_sum'] / 100 ),2);
+        }
+         $view = new View(['result'=>$products,'total_sum'=>$total_sum[0]['total_sum']]);
+         $view->render('Product_list');
     }
     public function add_view(){
         $product = new ProductCategoryModel();
@@ -23,13 +29,15 @@ class ProductController{
         $view->render('Product_add_form');
     }
     public function add(){
+        $form_data = $_POST;
         $product = new ProductModel();
-        $product->add($_POST['title'],$_POST['price'],$_POST['quantity'],$_POST['note'],$_POST['id_category']);
+        $product->add($form_data);
         header('Location:/product/index');
     }
     public function details(){
         $product = new ProductModel;
         $all_products = $product->get_by_id_with_category(Route::getInstance()->get_first_param());
+        $product->get_similar($all_products['id_category'],$all_products['price'],$this->prise_range_for_similar_products);
         $view = new View(['products'=>$all_products, 'id' =>Route::getInstance()->get_first_param() ]);
         $view->render('Product_details');
     }
@@ -48,24 +56,12 @@ class ProductController{
     }
     public function update(){
         if(isset($_POST['submit'])){
+            $form_data = $_POST;
             $product = new ProductModel;
             $current_product = $product->get_by_id(Route::getInstance()->get_first_param());
             $history = new HistoryModel;
-            $history->insert(
-                date("Y-m-d"),
-                $current_product['id'],
-                $current_product['title'],
-                $current_product['price'],
-                $current_product['quantity'],
-                $current_product['note'],
-                $current_product['id_category']
-            );
-            $product->update(Route::getInstance()->get_first_param(),
-                $_POST['updated_title'],
-                $_POST['updated_price'],
-                $_POST['updated_quantity'],
-                $_POST['updated_note'],
-                $_POST['updated_category']
+            $history->insert(date("Y-m-d"), $current_product);
+            $product->update(Route::getInstance()->get_first_param(),$form_data
             );
         }
 
@@ -74,9 +70,12 @@ class ProductController{
     public function history_view(){
         $history = new HistoryModel;
         $product_history = $history->get_all_by_id(Route::getInstance()->get_first_param());
-        //var_dump($product_history);
         $view = new View(['product_history' => $product_history]);
         $view->render('Product_history');
 
+    }
+    public function get_similar_product($id){
+       $product = new ProductModel;
+        $product->get_similar();
     }
 }

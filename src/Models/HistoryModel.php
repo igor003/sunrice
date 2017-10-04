@@ -16,10 +16,16 @@ class HistoryModel
     public function __construct(){
         $this->connection = \Database::getInstance();
     }
-    public function insert($date,$id_product,$title,$quantity,$price,$note,$id_category){
+    public function insert($date,$current_product){
         $this->connection->query("
            INSERT INTO `product_history` (date, id_product, title, quantity, price, note, id_category) 
-           VALUES ('".$date."','".$id_product."','".$title."','".$quantity."','".$price."','".$note."','".$id_category."')
+           VALUES ('".$date."',
+                   '".$current_product['id']."',
+                   '".$current_product['title']."',
+                   '".$current_product['quantity']."',
+                   '".$current_product['price']."',
+                   '".$current_product['note']."',
+                   '".$current_product['id_category']."')
         ");
     }
     public function get_all_by_id($id){

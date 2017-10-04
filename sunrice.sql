@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 28 2017 г., 23:08
+-- Время создания: Окт 04 2017 г., 23:07
 -- Версия сервера: 5.7.11
 -- Версия PHP: 7.0.4
 
@@ -33,14 +33,16 @@ CREATE TABLE IF NOT EXISTS `product` (
   `quantity` int(11) NOT NULL,
   `note` varchar(100) NOT NULL,
   `id_category` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Дамп данных таблицы `product`
 --
 
 INSERT INTO `product` (`id`, `title`, `price`, `quantity`, `note`, `id_category`) VALUES
-(1, 'vacuum cleaners', '100', 5, 'It is a long established fact that a reader will be distracted by the readable content', 1);
+(1, 'Vacuum cleaners', '100', 5, 'It is a long established fact that a reader will be distracted by the readable content', 1),
+(2, 'Coffe makerrrrrrdsdfsfdsfdsf', '1005', 8, 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of ', 1),
+(3, 'Electric kettel', '50', 50, 'Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from', 1);
 
 -- --------------------------------------------------------
 
@@ -71,11 +73,33 @@ INSERT INTO `product_category` (`id`, `category`) VALUES
 
 CREATE TABLE IF NOT EXISTS `product_history` (
   `id` int(11) NOT NULL,
+  `date` date NOT NULL,
   `id_product` int(11) NOT NULL,
   `title` varchar(100) NOT NULL,
   `quantity` int(11) NOT NULL,
-  `price` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `price` int(11) NOT NULL,
+  `note` varchar(200) NOT NULL,
+  `id_category` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Дамп данных таблицы `product_history`
+--
+
+INSERT INTO `product_history` (`id`, `date`, `id_product`, `title`, `quantity`, `price`, `note`, `id_category`) VALUES
+(1, '0000-00-00', 3, 'Electric kettles', 50, 5, 'Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from', 1),
+(2, '0000-00-00', 3, 'Electric kettlesssssssssssssssssssssss', 50, 5, 'Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from', 1),
+(3, '2017-01-03', 2, 'coffe maker', 150, 9, 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of ', 1),
+(4, '2017-10-03', 2, 'coffe makerrrrrrrrrrrrrrrrrr', 150, 9, 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of ', 1),
+(5, '2017-10-03', 2, 'coffe makerrrrrr', 15, 8, 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of ', 1),
+(6, '2017-10-03', 1, 'vacuum cleaners', 100, 5, 'It is a long established fact that a reader will be distracted by the readable content', 1),
+(7, '2017-10-03', 1, 'vacuum cleaners аваываываыва', 100, 5, 'It is a long established fact that a reader will be distracted by the readable content', 1),
+(8, '2017-10-03', 2, 'coffe makerrrrrr', 1005, 8, 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of ', 1),
+(9, '2017-10-04', 3, 'Electric kettel', 50, 5, 'Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from', 1),
+(10, '2017-10-04', 3, 'Electric kettelkkkkk99999', 50, 5, 'Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from', 1),
+(11, '2017-10-04', 3, 'Electric kettelkkkkk', 5, 50, 'Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from', 1),
+(12, '2017-10-04', 3, 'Electric kettel', 59999999, 50, 'Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from', 1),
+(13, '2017-10-04', 3, 'Electric kettel', 5, 50, 'Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from', 1);
 
 --
 -- Индексы сохранённых таблиц
@@ -107,7 +131,7 @@ ALTER TABLE `product_history`
 -- AUTO_INCREMENT для таблицы `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT для таблицы `product_category`
 --
@@ -117,7 +141,7 @@ ALTER TABLE `product_category`
 -- AUTO_INCREMENT для таблицы `product_history`
 --
 ALTER TABLE `product_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

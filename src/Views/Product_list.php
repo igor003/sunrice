@@ -18,7 +18,9 @@ include('headers.php');
             <thead>
             <tr>
                 <th class='text-center'>Product</th>
+                <th class='text-center'>Percentage of total cost</th>
                 <th class='text-center' colspan="2">Action</th>
+
             </tr>
             </thead>
             <tbody>
@@ -28,6 +30,9 @@ include('headers.php');
                     ?>
                     <tr>
                         <td class='text-center' scope="row"><a href="/product/details/<?php echo $product['id']?>"><?php echo $product['title'] ?></a></td>
+                        <td class='text-center'>
+                            <?php echo $product['percents'].'%'?>
+                        </td>
                         <td class='text-center'>
                             <a href=<?php echo '/product/update_view/'.$product['id']   ?>><div class="btn btn-success">Update</div></a>
                         </td>
@@ -39,6 +44,12 @@ include('headers.php');
                 }
             }
             ?>
+            <tr>
+                <td class='text-center'>Total sum</td>
+                <td class='text-center'><?php echo $total_sum ?></td>
+                <td></td>
+                <td></td>
+            </tr>
             </tbody>
         </table>
     </div>
