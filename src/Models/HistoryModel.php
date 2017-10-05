@@ -20,12 +20,12 @@ class HistoryModel
         $this->connection->query("
            INSERT INTO `product_history` (date, id_product, title, quantity, price, note, id_category) 
            VALUES ('".$date."',
-                   '".$current_product['id']."',
-                   '".$current_product['title']."',
-                   '".$current_product['quantity']."',
-                   '".$current_product['price']."',
-                   '".$current_product['note']."',
-                   '".$current_product['id_category']."')
+                   '".intval($current_product['id'])."',
+                   '".htmlspecialchars($current_product['title'])."',
+                   '".intval($current_product['quantity'])."',
+                   '".intval($current_product['price'])."',
+                   '".htmlspecialchars($current_product['note'])."',
+                   '".intval($current_product['id_category'])."')
         ");
     }
     public function get_all_by_id($id){
@@ -34,5 +34,8 @@ class HistoryModel
             INNER JOIN product_category AS pc ON 
             ph.id_category = pc.id WHERE ph.id_product = $id ORDER BY ph.date ASC
         ");
+    }
+    public function delete_by_id_product($id_product){
+      return $this->connection->query("DELETE FROM `product_history` WHERE id_product = '".$id_product."' ");
     }
 }

@@ -30,7 +30,7 @@ class Database {
 	}
 
 	public function query_all($query){
-		echo ($query);
+		//echo ($query);
       	$result = $this->_connection->query($query);
         $res=[];
         foreach($result as $val){

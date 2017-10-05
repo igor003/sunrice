@@ -3,6 +3,11 @@ include('headers.php');
 ?>
 <div class="container">
     <div class="row">
+        <div class="col-xs-4 col-xs-offset-4">
+            <a href="/product/index"><div class=" home btn btn-info"> Home </div></a>
+        </div>
+    </div>
+    <div class="row">
         <table class="table table-bordered">
             <thead>
             <tr>
