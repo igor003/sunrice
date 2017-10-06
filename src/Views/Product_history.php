@@ -18,7 +18,6 @@ include('headers.php');
                 <th class='text-center'>Note</th>
                 <th class='text-center'>Price</th>
                 <th class='text-center'>Category</th>
-
             </tr>
             </thead>
             <tbody>

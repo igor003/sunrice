@@ -7,7 +7,7 @@ class Database {
     private $_username = "root";
 	private $_password = "";
 	private $_database = "sunrice";
-	
+
 	public static function getInstance(){
 		if(!self::$_instance){
 			self::$_instance = new self();
@@ -20,17 +20,14 @@ class Database {
 	}
 
 	public function query($query){
-         //echo $query;
         return $this->_connection->query($query);
     }
 	
 	public function query_one($query) {
-        //var_dump($query);
 		return  $this->_connection->query($query)->fetch_assoc();
 	}
 
 	public function query_all($query){
-		//echo ($query);
       	$result = $this->_connection->query($query);
         $res=[];
         foreach($result as $val){

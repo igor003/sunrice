@@ -22,7 +22,6 @@ include('headers.php');
                 <th class="text-center">Quantity</th>
                 <th class='text-center'>Percentage of total cost</th>
                 <th class='text-center' colspan="2">Action</th>
-
             </tr>
             </thead>
             <tbody>
